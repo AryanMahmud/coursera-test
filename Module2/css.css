@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+
+body {
+	background-color: #DBB990;
+}
+
+object {
+	position: relative;
+	border: 1px solid black;
+	float: left;
+	margin:1.5%; 
+	margin-top: 100px;
+	width: 30%;  
+    padding:3%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E3D9B7;
+ }
+
+ .topright {
+ 	float: right;
+ 	margin: 0;
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	width: 30%;
+ 	text-align: center;
+ 	border: 1px solid black;
+    font-size: 125%;
+    width: 40%;
+    
+ }
+
+ #Hcolour1 {
+ 	background-color: #877434;
+ }
+
+ #Hcolour2 {
+ 	background-color: #D32B25;
+ 	color: #590000;
+	text-rendering: optimizeLegibility;
+ 	text-shadow: 2px 2px 2px #6F0300;
+ }
+
+ #Hcolour3 {
+ 	background-color: #000000;
+ 	color: grey;
+ }
+
+ .Ocolour3 {
+ 	background-color: #3C4F6E;
+ 	color: #909090;
+ }
+
+ #Ocolour2 {
+ 	background-color: #A40233;
+ }
+
+ div {
+ 	margin-top: 22%;
+ }
+
+
+  @keyframes hi {
+ 	from { color: #DBB990;}
+    to   { color: black;}
+ }
+h1 {
+	animation-name: hi;
+	animation-duration: 5s;
+	font-size: 175%;
+	font-style: oblique;
+	text-align: center;
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	object {width: 47%;
+	        margin-top: 1.5%}
+	.Ocolour3 {width: 97%;}
+}
+@media (max-width: 767px)
+{
+	object {width: 97%;
+	        margin-top: 1.5%;}
+}
