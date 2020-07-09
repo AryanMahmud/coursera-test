@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+#navCSS { 
+	background-color: #E3D9B7;
+	border-radius: 0;
+	padding-left: 0;
+	border:0;
+	color: #10247A;
+	text-shadow: 5px 1px 5px #000;
+}
+section {
+	border: 2px solid black; 
+	margin-bottom: 15px;
+}
+p {
+	padding: 15px;
+}
+.highlight {
+	font-weight: bold;
+	font-size: 2em;
+}
+#COLOUR1 {
+	background-color: #C2AC5F;
+}
+#COLOUR2 {
+	background-color: #f9f2f4;
+}
+#COLOUR3 {
+	background-color: #FF115F;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+ul#nav-list {
+	background-color:  #B4C9DE;
+	color: white;
+}
+button {
+	position: relative; 
+	top: -15px;
+}
+li {
+	margin-bottom: 15px;
+	font-size: 1.5em;
+}
