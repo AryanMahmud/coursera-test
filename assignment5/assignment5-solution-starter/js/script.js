@@ -101,7 +101,7 @@ function buildAndShowHomeHTML (categories) {
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
-      var chosenCategoryShortName = chooseRandomCategory().short_name 
+      var chosenCategoryShortName = chooseRandomCategory.short_name 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
       // Look through this code for an example of how to do use the insertProperty function.
@@ -110,11 +110,12 @@ function buildAndShowHomeHTML (categories) {
       // being passed into the $dc.loadMenuItems function. Think about what that argument needs
       // to look like. For example, a valid call would look something like this:
       // $dc.loadMenuItems('L')
-     insertProperty(html, "randomCategoryShortName", chosenCategoryShortName)
+      html = homeHtmlUrl
+      htmlc = insertProperty(html, "randomCategoryShortName", chosenCategoryShortName)
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
 
-      var homeHtmlToInsertIntoMainPage =
+      var homeHtmlToInsertIntoMainPage = htmlc
 
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
 
@@ -129,7 +130,7 @@ function buildAndShowHomeHTML (categories) {
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
-  var randomArrayIndex = Math.floor(Math.random() * 20);
+  var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
   // return category object with that randomArrayIndex
   return categories[randomArrayIndex];
